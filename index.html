@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather Application</title>
+</head>
+
+<body
+    style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');height: 100vh; padding-top: 200px;">
+    <div class="container mt-5" style="box-shadow: black; background-color: aqua; width: 400px; border-radius: 5%; ">
+        <div class="weather-container" style="padding: 5%;">
+            <div class="form-group">
+                <h1>Enter Your City</h1>
+                <input type="text" id="city" class="form-control" placeholder="Enter city" style="width: 300px;">
+            </div>
+            <button class="btn btn-primary" onclick="getWeather()">Get Weather</button>
+            <div class="weather-info mt-4">
+                <h2 id="city-name"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
